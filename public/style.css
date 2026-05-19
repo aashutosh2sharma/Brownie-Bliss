@@ -9481,3 +9481,11 @@ html.dark .customize-option input[type="checkbox"] {
 html.dark .topping-price {
   color: var(--gold);
 }
+
+.birthday-slider::-webkit-scrollbar {
+  display: none;
+}
+.birthday-slider {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
