@@ -10,6 +10,7 @@
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  
   <!-- Theme init: sets dark class synchronously before first paint (no flash) -->
   <script>
     (function () {
@@ -67,91 +68,146 @@
   <a href="index.html#contact">Contact</a>
   <a href="track.html">Track Order</a>
 </div>
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-pattern"></div>
-    <div class="hero-content">
-      <div class="hero-text">
-        <span class="hero-badge">Homemade Treats · Happiness in every bite</span>
-        <h1 class="hero-title">
-          Freshly Baked <em>Delights</em><br>Delivered to You
-        </h1>
-        <p class="hero-desc">Authentic recipes, traditional methods, the finest ingredients — baked with love
-          and served
-          with care, every single day.</p>
-        <a href="#products" class="hero-cta" style="text-decoration: none;">
-          Explore Our Menu &rarr;
-        </a>
-        <button class="hero-favourite-btn"
-          type="button"
-          data-fav-type="bakeries"
-          data-fav-id="brownie-bliss"
-          aria-pressed="false"
-          onclick="toggleBakeryFavourite()">
-          &#9825; Favourite Bakery
-        </button>
-      </div>
-      <div class="hero-visual">
-        <div class="hero-card">
-          <img src="https://theobroma.in/cdn/shop/files/redvelvet-theo.jpg?v=1701321860" alt="Red Velvet Cake">
-          <div class="hero-card-label">🎂 Signature Cakes</div>
-        </div>
-        <div class="hero-card">
-          <img src="https://theobroma.in/cdn/shop/files/OverloadBrownie_400x400.jpg?v=1711183338" alt="Brownies">
-          <div class="hero-card-label">🍫 Brownies</div>
-        </div>
-        <div class="hero-card">
-          <img src="https://theobroma.in/cdn/shop/files/Delicacies-04.jpg?v=1681320427" alt="Desserts">
-          <div class="hero-card-label">🍮 Desserts</div>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
 
-  <!-- VALUES STRIP -->
-  <div class="values-strip" id="about">
-    <div class="values-inner">
-      <div class="value-item">
-        <span class="value-icon">📖</span>
-        <div class="value-text">
-          <strong>Authentic Recipes</strong>
-          <span>Traditional home-style methods</span>
-        </div>
-      </div>
-      <div class="value-item">
-        <span class="value-icon">❤️</span>
-        <div class="value-text">
-          <strong>Baked with Love</strong>
-          <span>Every product crafted with passion</span>
-        </div>
-      </div>
-      <div class="value-item">
-        <span class="value-icon">✅</span>
-        <div class="value-text">
-          <strong>Committed to Quality</strong>
-          <span>Premium ingredients, always</span>
-        </div>
-      </div>
-      <div class="value-item">
-        <span class="value-icon">💛</span>
-        <div class="value-text">
-          <strong>Honestly Priced</strong>
-          <span>Best products at fair prices</span>
-        </div>
-      </div>
+  <div class="hero-content">
+
+    <div class="hero-text" data-aos="fade-right">
+
+      <span class="hero-badge">
+        Homemade Treats · Happiness in every bite
+      </span>
+
+      <h1 class="hero-title">
+        Freshly Baked <em>Delights</em><br>
+        Delivered to You
+      </h1>
+
+      <p class="hero-desc">
+        Authentic recipes, traditional methods, the finest ingredients —
+        baked with love and served with care, every single day.
+      </p>
+
+      <a href="#products" class="hero-cta" style="text-decoration: none;">
+        Explore Our Menu &rarr;
+      </a>
+
+      <button
+        class="hero-favourite-btn"
+        type="button"
+        data-fav-type="bakeries"
+        data-fav-id="brownie-bliss"
+        aria-pressed="false"
+        onclick="toggleBakeryFavourite()">
+
+        &#9825; Favourite Bakery
+
+      </button>
+
     </div>
+
+    <div class="hero-visual" data-aos="fade-left">
+
+      <div class="hero-card">
+
+        <img
+          src="https://theobroma.in/cdn/shop/files/redvelvet-theo.jpg?v=1701321860"
+          alt="Red Velvet Cake">
+
+        <div class="hero-card-label">
+          🎂 Signature Cakes
+        </div>
+
+      </div>
+
+      <div class="hero-card">
+
+        <img
+          src="https://theobroma.in/cdn/shop/files/OverloadBrownie_400x400.jpg?v=1711183338"
+          alt="Brownies">
+
+        <div class="hero-card-label">
+          🍫 Brownies
+        </div>
+
+      </div>
+
+      <div class="hero-card">
+
+        <img
+          src="https://theobroma.in/cdn/shop/files/Delicacies-04.jpg?v=1681320427"
+          alt="Desserts">
+
+        <div class="hero-card-label">
+          🍮 Desserts
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
+</section>
+  <!-- VALUES STRIP -->
+<div class="values-strip" id="about">
 
+  <div class="values-inner" data-aos="fade-up">
 
+    <div class="value-item">
+      <span class="value-icon">📖</span>
 
+      <div class="value-text">
+        <strong>Authentic Recipes</strong>
+        <span>Traditional home-style methods</span>
+      </div>
+    </div>
+
+    <div class="value-item">
+      <span class="value-icon">❤️</span>
+
+      <div class="value-text">
+        <strong>Baked with Love</strong>
+        <span>Every product crafted with passion</span>
+      </div>
+    </div>
+
+    <div class="value-item">
+      <span class="value-icon">✅</span>
+
+      <div class="value-text">
+        <strong>Committed to Quality</strong>
+        <span>Premium ingredients, always</span>
+      </div>
+    </div>
+
+    <div class="value-item">
+      <span class="value-icon">💛</span>
+
+      <div class="value-text">
+        <strong>Honestly Priced</strong>
+        <span>Best products at fair prices</span>
+      </div>
+    </div>
+
+  </div>
+</div>
   <!-- PRODUCTS SECTION -->
   <section class="products-section" id="products" style="padding: 100px 30px; background: var(--cream);">
     <div class="products-inner">
-      <div class="section-header">
-        <span class="section-label">Hand-picked for you</span>
-        <h2 class="section-title">Our <em>Full Range</em></h2>
-      </div>
+      <div class="section-header" data-aos="fade-up">
+
+  <span class="section-label">
+    Hand-picked for you
+  </span>
+
+  <h2 class="section-title">
+    Our <em>Full Range</em>
+  </h2>
+
+</div>
 
       <div class="filter-tabs" style="margin-bottom: 60px;">
         <button class="filter-tab active" onclick="filterProducts('all', this)">All</button>
@@ -166,7 +222,7 @@
   </section>
 
   <!-- BIRTHDAY & DESSERT SLIDER SECTION -->
-  <section class="birthday-section" id="birthday"
+  <section class="birthday-section" data-aos="fade-up"></section>
     style="padding: 100px 0; background: var(--cream-dark); min-height: 80vh; overflow: hidden;">
     
     <!-- Slider Hint -->
@@ -745,6 +801,7 @@
   <div class="toast" id="toast"></div>
   <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
   <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 </body>
 
 </html>

@@ -672,7 +672,42 @@ function sendWhatsAppFinal(orderId, itemsSnap, orderTotal) {
   window.open(waUrl, '_blank');
 }
 
-// --- TOAST ---
+    if (order.created_at) {
+        document.getElementById('resDate').textContent = new Date(order.created_at).toLocaleString();
+    } else {
+        btn.style.display = "none";
+    }
+});
+
+// Scroll to top function
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+AOS.init({
+  duration: 1000,
+  once: true,
+  easing: "ease-in-out"
+});
+    const message = document.getElementById('customizeMessage').value.trim();
+
+    const toppingsTotal = toppings.reduce((s, t) => s + t.price, 0);
+    const finalPrice = _customizeProduct.price + toppingsTotal;
+
+    const cartItem = {
+        ..._customizeProduct,
+        price: finalPrice,
+        customizations: {
+            dietary,
+            toppings,
+            message
+        }
+    };
+// ============================================================
+// TOAST
+// ============================================================
 function showToast(msg) {
   const t = document.getElementById('toast');
   if (!t) return;
